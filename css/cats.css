@@ -331,6 +331,7 @@ footer .container__footer {
   footer .footer__figure {
     width: 150px;
     height: 150px;
+    
   }
   
   footer .footer__figure img {
@@ -362,6 +363,7 @@ footer .container__footer {
   footer .footer__description {
     width: 40%;
     text-align: center;
+
   }
   
   footer .description__title {

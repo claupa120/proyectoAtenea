@@ -1,0 +1,114 @@
+/* punto 4 */
+#div{
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    }
+    .azul{
+      color:blue;
+    }
+    .rojo{
+      color:red;
+    
+    }
+    /* punto 5 */
+    .a{
+        color:green;
+        
+      }
+      .b{
+        color:red;
+      }
+      .c{
+        text-decoration: underline overline;
+      }
+      b{
+        font-size: 26px;
+        
+      }
+      .d{
+        color:blue;
+      }
+      .e{
+        color:red;
+        font-weight:bold;
+        text-decoration: underline;
+      }
+      /* punto 6 */
+      .a6{
+        color:yellow;
+        text-decoration:underline;
+        
+      }
+      .a7{
+        color:purple;
+         text-decoration:underline;
+      }
+      /* punto 7 */
+      .p7-nav{
+        background-color:#d29bfd; 
+        
+      }
+      .p7-nav ul{
+        display:inline-flex;
+      }
+      .p7-nav li{
+        padding:10px;
+        list-style:none;
+        
+      }
+      .p7-nav li a{
+        text-decoration:none;
+        color:white;
+      }
+      .p7-nav li:hover{
+         background-color:blue; 
+        
+      }
+      /* punto 8 */
+      <table class="p_8_table">
+<tr>
+<thead>
+  <td>EDAD</td>
+  <td>PESO</td>
+  </thead>
+</tr>
+<tr>
+  <td>40</td>
+  <td>78</td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>76</td>
+</tr>
+<td colspan="2">
+  En el momento en que entiendo verdaderamente a mi enemigo, en el momento que le entiendolo suficientemente bien para derrotarle,entonces, en ese preciso intante, tambien le quiero
+</td>
+
+</table>
+/* punto 8 */
+.p_8_table{
+    background-color:yellow;
+    border: 1px dotted;
+    border-bottom: 1px red dashed;
+    border-spacing:0px;
+  }
+  .p_8_table thead td{
+   text-align: center;
+   color:red;
+   font-style:italic;
+   font-size:15px;
+   text-transform:uppercase;
+   font-weight:bold;
+   font-family:arial;
+  
+  }
+  .p_8_table thead td::first-letter{
+    font-size:22px;
+  }
+  .p_8_table td{
+    
+    border: 1px dotted;
+  }
+  
+/* punto 9   */
