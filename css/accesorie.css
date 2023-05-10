@@ -11,7 +11,7 @@
     background-size: 100% 100%;
     background-attachment: fixed;
     height: 100vh;
-    
+    /* background-color: brown; */
   }
   main .container__accesories {
    
@@ -37,3 +37,4 @@
    
 
   }
+  

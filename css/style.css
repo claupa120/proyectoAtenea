@@ -12,7 +12,6 @@ body {
   background-attachment: fixed;
   height: 100vh;
 }
-
 /*HEADER*/
 
 header .container__header {
@@ -41,11 +40,13 @@ header .header__category i {
 }
 
 header .header__category {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   padding-top: 80px;
-  margin-left: -100px;
+  margin-left: 280px;
+ 
 }
 
 header .header__category .nav ul {
@@ -100,10 +101,12 @@ header .header__category .category__copy {
 
 header .header__input {
   padding-top: 80px;
-  position: relative;
+  position:absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left:800px;
+  
 }
 
 header .header__input input {
@@ -185,6 +188,7 @@ header .header__service .service__paragraph {
   border-left: 2px solid #2fc1ee;
   padding-left: 10px;
 }
+
 
 /*HOME*/
 
@@ -307,7 +311,7 @@ main .animals__copy h3 {
      33%{ transform:translateY(-1px) rotate(-2deg); }
      66%{ transform:translateY(1px) rotate(2deg); }
    }
-   body:hover span { animation:bounce .6s; }
+   body:hover span { animation:bounce .6s infinite; }
    @keyframes bounce {
      0%,100%{ transform:translate(0); }
      25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
@@ -360,10 +364,6 @@ main .animals__copy h3 {
   object-fit: cover;
   object-position: center;
 }
-
-
-/*FOOTER*/
-
 footer .container__footer {
   width: 100%;
   height: auto;
@@ -380,10 +380,6 @@ footer .container__footer {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   padding-bottom: 120px;
 }
-
-/* footer .footer__logo img {
-  width: 150px;
-} */
 
 footer .footer__figure {
   width: 150px;
@@ -507,3 +503,4 @@ footer .text__copy{
     text-align: center;
 
 }
+

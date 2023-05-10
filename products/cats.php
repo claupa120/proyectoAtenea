@@ -1,59 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cats.css">
     <link rel="shortcut icon" href="../assets/pagina/logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/cf9fd5b80a.js" crossorigin="anonymous"></script>
     <title>+ Que Mascotas</title>
 </head>
+
 <body>
-    <header>
-        <div class="container__header">
-          <img src="../assets/pagina/logo.png" alt="" class="header__img" />
-  
-          <div class="header__category">
-            <nav class="nav">
-              <ul class="nav__item">
-                <li>
-                  <i class="fa-sharp fa-solid fa-bars"></i>
-                  <a class="category__copy">categorias</a>
-                  <ul class="subitem">
-                    <li><a href="./category/toy.html">Juguetes</a></li>
-                    <li><a href="./category/toilet.html">Aseo y belleza</a></li>
-                    <li><a href="./category/fleas.html">Anti-pulgas</a></li>
-                    <li><a href="./category/feeder.html">Comederos</a></li>
-                    <li><a href="./category/accesories.html">Accesorios</a></li>
-                    <li><a href="./category/beds.html">Camas y cargadores</a></li>
-                    <li><a href="./category/snack.html">Snack y premios</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-  
-          <div class="header__input">
-            <input type="text" name="" id="" placeholder="¿Que estas buscando?" />
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-  
-          <div class="header__product">
-            <a href="./products/products.html" class="product__link">
-              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-              <h3 class="product__copy">productos</h3>
-            </a>
-          </div>
-  
-          <div class="header__service">
-            <p class="service__copy">estamos en linea</p>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <p class="service__paragraph">servicio al cliente</p>
-          </div>
-        </div>
-      </header>
+<header>
+        <?php include '../header.php'; ?>
+    </header>
 
     <main>
         <section class="home">
@@ -62,7 +25,7 @@
 
             </div>
             <div class="">
-                <h2><a href="../index.html">Home</a>><a href="cats.html">Gatos</a></h2>
+                <h2><a href="../index.php">Home</a>><a href="cats.php">Gatos</a></h2>
             </div>
             <div class="container__home">
                 <div class="home__img">
@@ -128,84 +91,84 @@
             <div class="container__category">
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/productoGato1.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="card__category">
                     <div class="card__img">
-                        <a href="../products/description.html" target="_blank">
+                        <a href="../products/description.php" target="_blank">
                             <img src="../assets/gato/gatos.jpg" alt="">
                         </a>
                     </div>
@@ -215,64 +178,10 @@
     </main>
 
     <footer>
-        <div class="container__footer">
-          <!-- <div class="footer__logo">
-            <img src="assets/logo.png" alt="" />
-          </div> -->
-          
-          <div class="footer__services">
-            <h1 class="services__title">Preguntas frecuentes</h1>
-            <a href="#" class="services__link">
-              <p class="services__paragraph">Como es el pago?</p>
-            </a>
-  
-            <a href="#" class="services__link">
-              <p class="services__paragraph">Condiciones de entrega</p>
-            </a>
-  
-            <a href="#" class="services__link">
-              <p class="services__paragraph">Pedido minimo</p>
-            </a>
-  
-            <a href="#" class="services__link">
-              <p class="services__paragraph">ubicacion</p>
-            </a>
-          </div>
-  
-          <div class="footer__description">
-            <h1 class="description__title">+ Que Mascotas</h1>
-            <p class="description__copy">
-              Somos la opción perfecta para cuidar a tus mascotas. En nuestra tienda encontrarás productos de alta calidad, enfocados en el bienestar y la felicidad de tu mejor amigo peludo
-            </p>
-          </div>
-  
-          <figure class="footer__figure">
-              <a href="https://wa.me/ + número prefijo país 573197531345"><img src="../assets/pagina/whatsApp.png" alt="" /></a>
-          </figure>
-  
-          <div class="footer__text">
-                       
-            <div class="footer__img">
-              <a href="#">
-                <img src="../assets/pagina/facebook.ico" alt="">
-              </a>
-  
-              <a href="#">
-                <img src="../assets/pagina/Instagram.ico" alt="">
-              </a>
-  
-              <a href="#">
-                <img src="../assets/pagina/tiktok.png" alt="">
-              </a>
-            </div>
-  
-            <div class="text__copy">
-              <p class="text__paragraph">
-                todos los derechos reservados &copy; -2023
-              </p>
-         
-       
-      </div>
-      </footer>
+
+        <?php include '../footer.php'; ?>
+
+    </footer>
 </body>
+
 </html>

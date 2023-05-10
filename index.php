@@ -1,89 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Esta pagina te vende productos para mascotas(gato y perro)"
-    />
+    <meta name="description" content="Esta pagina te vende productos para mascotas(gato y perro)" />
     <meta name="robots" content="index,follow" />
     <meta name="author" content="Claudia Paola Suarez" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="assets/pagina/logo.png" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/cf9fd5b80a.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/pagina/logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/cf9fd5b80a.js" crossorigin="anonymous"></script>
     <title>+ Que Mascotas</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="container__header">
-        <img src="assets/pagina/logo.png" alt="" class="header__img" />
+    <div class="container__header">
+        <img src="./assets/pagina/logo.png" alt="" class="header__img" />
 
         <div class="header__category">
-          <nav class="nav">
-            <ul class="nav__item">
-              <li>
-                <i class="fa-sharp fa-solid fa-bars"></i>
-                <a class="category__copy">categorias</a>
-                <ul class="subitem">
-                  <li><a href="./category/toy.html">Juguetes</a></li>
-                  <li><a href="./category/toilet.html">Aseo y belleza</a></li>
-                  <li><a href="./category/fleas.html">Anti-pulgas</a></li>
-                  <li><a href="./category/feeder.html">Comederos</a></li>
-                  <li><a href="./category/accesories.html">Accesorios</a></li>
-                  <li><a href="./category/beds.html">Camas y cargadores</a></li>
-                  <li><a href="./category/snack.html">Snack y premios</a></li>
+            <nav class="nav">
+                <ul class="nav__item">
+                    <li>
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                        <a class="category__copy">categorias</a>
+                        <ul class="subitem">
+                            <li><a href="./category/toy.php">Juguetes</a></li>
+                            <li><a href="./category/toilet.php">Aseo y belleza</a></li>
+                            <li><a href="./category/fleas.php">Anti-pulgas</a></li>
+                            <li><a href="./category/feeder.php">Comederos</a></li>
+                            <li><a href="./category/accesories.php">Accesorios</a></li>
+                            <li><a href="./category/beds.php">Camas y cargadores</a></li>
+                            <li><a href="./category/snack.php">Snack y premios</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-          </nav>
+            </nav>
         </div>
 
         <div class="header__input">
-          <input type="text" name="" id="" placeholder="¿Que estas buscando?" />
-          <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" placeholder="¿Que estas buscando?" />
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
         <div class="header__product">
-          <a href="./products/products.html" class="product__link">
+          <a href="./products/products.php" class="product__link">
             <i class="fa-sharp fa-solid fa-cart-shopping"></i>
             <h3 class="product__copy">productos</h3>
           </a>
         </div>
 
         <div class="header__service">
-          <p class="service__copy">estamos en linea</p>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-          <p class="service__paragraph">servicio al cliente</p>
+            <p class="service__copy">estamos en linea</p>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <p class="service__paragraph">servicio al cliente</p>
         </div>
-      </div>
+    </div>
     </header>
-
     <main>
-      <section class="home">
+    <section class="home">
         <div class="container__home">
           <div class="home__img">
-            <a href="/products/offers.html"
+            <a href="./products/offers.php"
               ><img src="assets/pagina/olfateo.png" alt=""
             /></a>
-            <div class="home__hover">
-              <p class="home__copy">estamos olfateando ofertas</p>
-            </div>
+           
           </div>
           <div class="home__img">
             <img src="assets/gato/gatos.jpg" alt="" />
             <div class="home__hover">
               <p class="home__copy">Hecha un vistazo a nuestra galeria</p>
-              <a href="/history/galery.html">aqui</a>
+              <a href="./history/galery.php">aqui</a>
             </div>
           </div>
 
@@ -91,7 +81,7 @@
             <img src="assets/pagina/Comparte a tu gat@.png" alt="" />
             <div class="home__hover">
               <p class="home__copy"></p>
-              <a href="/history/history.html">aqui</a>
+              <a href="./history/history.php">aqui</a>
             </div>
           </div>
         </div>
@@ -99,12 +89,12 @@
         <section class="animals">
           <div class="home__inside">
             <div class="inside__img">
-              <a href="./products/cats.html">
+              <a href="./products/cats.php">
                 <img src="assets/gato/gato-princ.png" alt="" />
               </a>
             </div>
             <div class="inside__img">
-              <a href="./products/dogs.html">
+              <a href="./products/dogs.php">
                 <img src="assets/perro/perro-princ.png" alt="" />
               </a>
             </div>
@@ -118,30 +108,33 @@
         </section>
       </section>
 
-      <section class="product">
-        
-        <div class="container__product">
-          <div class="product__img">
-            <img src="assets/perro/producto1.jpg" alt="" />
-          </div>
-          <div class="product__img">
-            <img src="assets/perro/producto2.jpg" alt="" />
-          </div>
-          <div class="product__img">
-            <img src="assets/perro/producto3.jpg" alt="" />
-          </div>
-          <div class="product__img">
-            <img src="assets/perro/producto4.jpg" alt="" />
-          </div>
-        </div>
-      </section>
+        <section class="product">
+
+            <div class="container__product">
+                <div class="product__img">
+                    <a href="./products/descriptionp.php"><img src="assets/perro/producto1.jpg" alt="" /></a>
+
+                </div>
+
+                <div class="product__img">
+                    <a href="./products/descriptionp.php"><img src="assets/perro/producto2.jpg" alt="" /></a>
+
+                </div>
+                <div class="product__img">
+                    <a href="./products/descriptionp.php"><img src="assets/perro/producto3.jpg" alt="" /></a>
+
+                </div>
+                <div class="product__img">
+                    <a href="./products/descriptionp.php"><img src="assets/perro/producto4.jpg" alt="" /></a>
+
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <div class="container__footer">
-        <!-- <div class="footer__logo">
-          <img src="assets/logo.png" alt="" />
-        </div> -->
+
+    <div class="container__footer">
         
         <div class="footer__services">
           <h1 class="services__title">Preguntas frecuentes</h1>
@@ -170,7 +163,7 @@
         </div>
 
         <figure class="footer__figure">
-            <a href="https://wa.me/ + número prefijo país 573197531345"><img src="assets/pagina/whatsApp.png" alt="" /></a>
+            <a href="https://wa.me/ + número prefijo país 573197531345"><img src="./assets/pagina/whatsApp.png" alt="" /></a>
         </figure>
 
         <div class="footer__text">
@@ -196,6 +189,8 @@
        
      
     </div>
+
     </footer>
-  </body>
+</body>
+
 </html>
