@@ -130,6 +130,9 @@
                 </div>
             </div>
         </section>
+        <a href="https://wa.me/573197531345" class="btn-whatsapp">
+	<img src="./icon-whatsapp.svg" alt="Contactar por WhatsApp">
+</a> 
     </main>
 
     <footer>
@@ -162,9 +165,9 @@
           </p>
         </div>
 
-        <figure class="footer__figure">
+        <!-- <figure class="footer__figure">
             <a href="https://wa.me/ + número prefijo país 573197531345"><img src="./assets/pagina/whatsApp.png" alt="" /></a>
-        </figure>
+        </figure> -->
 
         <div class="footer__text">
                      

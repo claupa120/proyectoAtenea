@@ -21,17 +21,114 @@
         <?php include '../header.php'; ?>
     </header>
     <main>
-        <section class="container__accesories">
+        <section class="products">
+            <h1 class="products__title">Accesorios</h1>
+            <div class="products__select">
+                <select>
+                    <option>La primera opción</option>
+                    <option>La segunda opción</option>
+                    <option>La tercera opción</option>
+                </select>
+            </div>
+            <div class="container__products">
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../assets/perro/producto2.jpg" alt="" />
+                    </div>
 
-            <div class="accesories">
-                <h1 class="titulo">¡Estamos trabajando en esta página!</h1>
-                <p>Disculpa las molestias. Estamos realizando mejoras en nuestro sitio web para brindarte una mejor
-                    experiencia. Vuelve pronto para ver las actualizaciones.</p> 
-                <img src="../assets/pagina/SITIO-EN-CONSTRUCCION.jpg" alt="">
 
+                    <div class="card__hover">
+                        <h3 class="card__title">titulo</h3>
+                        <a href="#" class="card__link">solicitar informacion</a>
+                        <p class="card__paragraph">$ 30.000</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../assets/perro/producto3.jpg" alt="" />
+                    </div>
+
+                    <div class="card__hover">
+                        <h3 class="card__title">titulo</h3>
+                        <a href="#" class="card__link">solicitar informacion</a>
+                        <p class="card__paragraph">$ 30.000</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../assets/perro/producto4.jpg" alt="" />
+                    </div>
+
+                    <div class="card__hover">
+                        <h3 class="card__title">titulo</h3>
+                        <a href="#" class="card__link">solicitar informacion</a>
+                        <p class="card__paragraph">$ 30.000</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../assets/perro/producto4.jpg" alt="" />
+                    </div>
+
+                    <div class="card__hover">
+                        <h3 class="card__title">titulo</h3>
+                        <a href="#" class="card__link">solicitar informacion</a>
+                        <p class="card__paragraph">$ 30.000</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../assets/perro/producto4.jpg" alt="" />
+                    </div>
+
+                    <div class="card__hover">
+                        <h3 class="card__title">titulo</h3>
+                        <a href="#" class="card__link">solicitar informacion</a>
+                        <p class="card__paragraph">$ 30.000</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../assets/perro/producto4.jpg" alt="" />
+                    </div>
+
+                    <div class="card__hover">
+                        <h3 class="card__title">titulo</h3>
+                        <a href="#" class="card__link">solicitar informacion</a>
+                        <p class="card__paragraph">$ 30.000</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../assets/perro/producto4.jpg" alt="" />
+                    </div>
+
+                    <div class="card__hover">
+                        <h3 class="card__title">titulo</h3>
+                        <a href="#" class="card__link">solicitar informacion</a>
+                        <p class="card__paragraph">$ 30.000</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../assets/perro/producto4.jpg" alt="" />
+                    </div>
+
+                    <div class="card__hover">
+                        <h3 class="card__title">titulo</h3>
+                        <a href="#" class="card__link">solicitar informacion</a>
+                        <p class="card__paragraph">$ 30.000</p>
+                    </div>
+                </div>
             </div>
         </section>
-
     </main>
     <footer>
 

@@ -40,12 +40,12 @@
 
         <div class="header__input">
             <input type="text" name="" id="" placeholder="¿Que estas buscando?" />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i   class="fa-solid fa-magnifying-glass"></i>
         </div>
 
         <div class="header__product">
             <a href="../index.php" class="product__link">
-                <i class="fa-solid fa-house"></i>
+                <i  class="fa-solid fa-house"></i>
                 <h3 class="product__copy">Inicio</h3>
             </a>
         </div>

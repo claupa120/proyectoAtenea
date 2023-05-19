@@ -24,7 +24,7 @@
 
             <section class="description">
                 <div class="navegacion">
-                    <h2><a href="../index.php">Home</a>><a href="cats.php">Gatos</a>/<a
+                    <h2><a href="cats.php">Gatos / </a><a
                             href="description.php">Producto</a></h2>
                 </div>
                 <div class="container__description">
