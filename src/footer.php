@@ -16,24 +16,25 @@
   <body>
   <div class="container__footer">
 
-<div class="footer__services">
-    <h1 class="services__title">Preguntas frecuentes</h1>
-    <a href="#" class="services__link">
-        <p class="services__paragraph">Como es el pago?</p>
-    </a>
 
-    <a href="#" class="services__link">
-        <p class="services__paragraph">Condiciones de entrega</p>
-    </a>
+  <div class="footer__services">
+                <h1 class="services__title">Preguntas frecuentes</h1>
+                <a href="questions.php" class="services__link">
+                    <p class="services__paragraph">Como es el pago?</p>
+                </a>
 
-    <a href="#" class="services__link">
-        <p class="services__paragraph">Pedido minimo</p>
-    </a>
+                <a href="questions.php" class="services__link">
+                    <p class="services__paragraph">Condiciones de entrega</p>
+                </a>
 
-    <a href="#" class="services__link">
-        <p class="services__paragraph">ubicacion</p>
-    </a>
-</div>
+                <a href="questions.php" class="services__link">
+                    <p class="services__paragraph">Pedido minimo</p>
+                </a>
+
+                <a href="questions.php" class="services__link">
+                    <p class="services__paragraph">ubicacion</p>
+                </a>
+            </div>
 
 <div class="footer__description">
     <h1 class="description__title">+ Que Mascotas</h1>

@@ -12,7 +12,13 @@
     background-attachment: fixed;
     height: 100vh;
   }
-  
+  header{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 999;
+
+}
   
 /*DESCRIPCION*/
 

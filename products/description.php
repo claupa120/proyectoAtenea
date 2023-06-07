@@ -14,82 +14,75 @@
 </head>
 
 <body>
-<header>
-<?php include '../src/header.php'; ?>
+    <header>
+        <?php include '../src/header.php'; ?>
     </header>
 
+    <body>
     <main>
-        <main>
+        <section class="description">
+            <div class="navegacion">
+                <h2><a href="cats.php">Gatos / </a><a href="description.php">Producto</a></h2>
+            </div>
+            <div class="container__description">
 
-
-            <section class="description">
-                <div class="navegacion">
-                    <h2><a href="cats.php">Gatos / </a><a
-                            href="description.php">Producto</a></h2>
+                <div class="description__text">
+                    <h1 class="description__title">descripcion</h1>
+                    <p class="description__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies
+                        leo eget metus ultricies, ut lacinia lectus congue. Fusce varius massa vel eleifend interdum. In hac
+                        habitasse platea dictumst. Curabitur finibus tortor a urna maximus dictum. Proin lobortis augue vitae
+                        libero tincidunt, ut efficitur est gravida. Maecenas tristique turpis at tortor commodo, vitae
+                        lacinia sapien varius. Donec sollicitudin erat vitae ante aliquam dictum. Sed euismod nunc eu nunc
+                        dignissim iaculis. Maecenas consectetur orci mauris, vitae lacinia arcu blandit sit amet. Cras sed
+                        sagittis metus, id convallis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                        posuere cubilia curae; Donec varius tellus sit amet aliquam dignissim. Morbi venenatis velit ut
+                        mauris vulputate bibendum. Etiam mollis sem vel sagittis efficitur. Etiam sit amet semper erat.</p>
                 </div>
-                <div class="container__description">
 
-                    <div class="description__text">
-                        <h1 class="description__title">descripcion</h1>
-                        <p class="description__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Blanditiis,
-                            soluta architecto consectetur quo deserunt dicta odio dolores commodi officiis doloremque
-                            dignissimos nam cum voluptatem at vel eius, itaque maxime molestias? Expedita eum, modi
-                            eaque
-                            consectetur quibusdam ex, reprehenderit dolores vel odit molestias alias officia vero dolore
-                            excepturi esse, maxime magnam possimus accusamus delectus quae sunt ducimus optio facilis.
-                            Repellat recusandae in expedita, incidunt vero voluptatum aliquid repellendus optio odit
-                            placeat.</p>
-                    </div>
-
-                    <div class="description__img">
-                        <img src=".././assets/gato/productoGato1.jpg" alt="">
-                    </div>
-
-                    <div class="description__order">
-                        <div class="order__price">
-                            <h2 class="title__price">precio</h2>
-                            <h3 class="price">$60.000</h3>
-                        </div>
-
-                        <div class="description__size">
-                            <h2 class="size__title">talla</h2>
-                            <div class="container__size">
-                                <button class="card__size">
-                                    <p class="size">s </p>
-                                </button>
-                                <button class="card__size">
-                                    <p class="size">m</p>
-                                </button>
-                                <button class="card__size">
-                                    <p class="size">l</p>
-                                </button>
-                            </div>
-
-                        </div>
-
-                        <div class="order__color">
-                            <h3 class="color__title">color</h3>
-                            <div class="contianer__color">
-                                <button class="buttom bnt__c1"></button>
-                                <button class="buttom bnt__c2"></button>
-                                <button class="buttom bnt__c3"></button>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/ + número prefijo país 573197531345" class="bnt__cta"><i
-                                class="fa-brands fa-whatsapp"></i> ordena ahora</a>
-                    </div>
+                <div class="description__img">
+                    <img src=".././assets/gato/anti-pulgasGato.jpg" alt="Producto">
                 </div>
-            </section>
-            <a href="https://wa.me/573197531345" class="btn-whatsapp">
+
+                <div class="description__order">
+                    <div class="order__price">
+                        <h3 class="title__price">Precio</h3>
+                        <p>$99.99</p>
+                    </div>
+
+                    <div class="description__size">
+                        <h3 class="size__title">Tamaño</h3>
+                        <div class="container__size">
+                            <button class="card__size"><span class="size">S</span></button>
+                            <button class="card__size"><span class="size">M</span></button>
+                            <button class="card__size"><span class="size">L</span></button>
+                        </div>
+                    </div>
+
+                    <div class="order__color">
+                        <h3 class="color__title">Color</h3>
+                        <div class="contianer__color">
+                            <button class="buttom bnt__c1"></button>
+                            <button class="buttom bnt__c2"></button>
+                            <button class="buttom bnt__c3"></button>
+                        </div>
+                    </div>
+
+                    <a href="https://api.whatsapp.com/send?phone=1234567890" class="bnt__cta">Comprar ahora</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/573197531345" class="btn-whatsapp">
             <img src="../assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
         </a>
-        </main>
 
-        <footer>
+
+    <footer>
         <?php include '../src/footer.php'; ?>
 
-</footer>
+    </footer>
 </body>
 
 </html>

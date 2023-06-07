@@ -3,64 +3,71 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
-  }
-  body {
+}
+
+body {
     background-image: url(../assets/pagina/fondo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     background-attachment: fixed;
     height: 100vh;
+}
+header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+  
   }
-  
-  
-  
 /*DESCRIPCION*/
 
-.description{
+.description {
     padding: 100px 15px;
 }
 
-
-.container__description{
+.container__description {
     display: flex;
     justify-content: space-around;
     margin-top: 90px;
 }
 
-
-.description__text{
+.description__text {
     width: 30%;
+    text-align: justify;
 }
-main .navegacion{
+
+main .navegacion {
     margin-top: 45px;
 }
-main .navegacion a{
+
+main .navegacion a {
     text-decoration: none;
     color: #2fc1ee;
-  
 }
-.description__title{
+
+.description__title {
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
-}article
+}
 
-.description__copy{
+.description__copy {
     text-align: justify;
 }
-.description__img{
+
+.description__img {
     width: 300px;
     height: 300px;
 }
 
-.description__img img{
+.description__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.description__order{
+.description__order {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,41 +75,39 @@ main .navegacion a{
     width: 20%;
 }
 
-.order__price{
+.order__price {
     width: 100%;
     padding: 20px;
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #7777;
-
 }
-.title__price{
+
+.title__price {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.description__size{
+.description__size {
     width: 100%;
     padding-bottom: 10px;
     border-bottom: 1px solid #7777;
     margin-bottom: 40px;
-
 }
 
-.container__size{
+.container__size {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    
 }
 
-.size__title{
+.size__title {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.card__size{
+.card__size {
     width: 2rem;
     height: 2rem;
     margin-left: 10px;
@@ -114,39 +119,39 @@ main .navegacion a{
     background: #2fc1ee;
     color: #fff;
     cursor: pointer;
-    box-shadow:  0 0 2px 2px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .8);
     transition: transform .6s;
 }
 
-.card__size:hover{
+.card__size:hover {
     transform: scale(1.3);
 }
 
-.card__size .size{
+.card__size .size {
     font-size: 18px;
     text-transform: uppercase;
 }
 
-.order__color{
+.order__color {
     width: 100%;
     margin-bottom: 40px;
     padding-bottom: 10px;
     border-bottom: 1px solid #7777;
 }
 
-.color__title{
+.color__title {
     text-transform: uppercase;
     margin-bottom: 40px;
 }
 
-.contianer__color{
+.contianer__color {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
 }
 
-.contianer__color .buttom{
+.contianer__color .buttom {
     width: 2rem;
     height: 2rem;
     margin-right: 20px;
@@ -157,21 +162,23 @@ main .navegacion a{
     transition: transform .6s;
 }
 
-.contianer__color .buttom:hover{
+.contianer__color .buttom:hover {
     transform: scale(1.3);
 }
 
-.contianer__color .bnt__c1{
+.contianer__color .bnt__c1 {
     background: #f00000;
 }
-.contianer__color .bnt__c2{
+
+.contianer__color .bnt__c2 {
     background: #000;
 }
-.contianer__color .bnt__c3{
+
+.contianer__color .bnt__c3 {
     background: #fff;
 }
 
-.bnt__cta{
+.bnt__cta {
     width: 100%;
     text-align: center;
     padding: 15px 30px;
@@ -183,59 +190,79 @@ main .navegacion a{
     text-transform: uppercase;
     transition: transform .6s;
     border-radius: 10px;
- 
 }
 
-.bnt__cta:hover{
+.bnt__cta:hover {
     transform: scale(1.2);
 }
 
-
 .btn-whatsapp {
-  position: fixed;
-  z-index: 999;
-  bottom: 20px;
-  right: 20px;
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
 }
 
 .btn-whatsapp:before,
 .btn-whatsapp:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 4px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: #00e676;
-  opacity: 0;
-  animation: onda 1.7s infinite;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #00e676;
+    opacity: 0;
+    animation: onda 1.7s infinite;
 }
 
 .btn-whatsapp:before {
-  animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .btn-whatsapp:after {
-  animation-delay: 1.3s;
+    animation-delay: 1.3s;
 }
 
 .btn-whatsapp img {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 @keyframes onda {
-  0% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(1);
+    }
 
-  15% {
-    opacity: 1;
-  }
+    15% {
+        opacity: 1;
+    }
 
-  100% {
-    opacity: 0;
-    transform: scale(2.5);
-  }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container__description {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description__text {
+        width: 100%;
+    }
+
+    .description__img {
+        margin-top: 40px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .description__order {
+        width: 100%;
+    }
 }
