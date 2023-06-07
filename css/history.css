@@ -1,39 +1,466 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.home {
+  width: 90%;
+  height: auto;
+}
+
+.container__history {
+  padding: 70px 15px;
+  background-image: url('../assets/pagina/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.titulo__history {
+  margin: 60px auto;
+  width: 334px;
+  height: 70px;
+  background: #f8b188;
+  border-radius: 15;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo__history h1 {
+  font-family: 'Roboto Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.formulario {
+  width: 80%;
+  height: 500px;
+  margin-top: -50px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.name__history {
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  height: 60px;
+  border: 2px solid #000000;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.name__history input {
+  width: 70%;
+  height: 30px;
+  margin-left: 130px;
+}
+
+.cuenta__history {
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  height: 340px;
+  border: 2px solid #000000;
+  padding: 10px;
+  background-image: url('../assets/pagina/fondo_perro.png');
+}
+
+.cuenta__history textarea {
+  width: 90%;
+  height: 270px;
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 34px;
+  color: #0F0E0E;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5px;
+  text-align: justify;
+  resize: vertical;
+}
+
+
+
+.foto__history {
+  width: 50%;
+  height: 300px;
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 34px;
+  position: relative;
+  display: flex;
+  left: 900px;
+  margin-top: -400px;
+  margin-bottom: 20px;
+}
+
+.foto__history .foto__history__1 {
+  width: 300px;
+  height: 300px;
+  border: 2px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.foto__history .foto__history__1 p {
+  font-size: 13px;
+}
+
+.subir__history {
+  box-sizing: border-box;
+  position: absolute;
+  width: 50%;
+  height: 60px;
+  border: 0.5px solid #000000;
+  padding: 10px;
+  margin-bottom: -220px;
+  margin-left: 850px;
+}
+
+.subir__history label {
+  margin-left: 20px;
+}
+
+.subir__history input {
+  width: 450px;
+  height: 30px;
+  margin-left: 30px;
+
+}
+
+
+.button {
+  width: 150px;
+  height: auto;
+  margin-left: 1650px;
+  margin-top: 100px;
+}
+
+.button button {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333333;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #FFD27D;
+  border-color: #f3f0f0;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 35px;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #1790d6;
+
+}
+
+.btn-whatsapp {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btn-whatsapp:before,
+.btn-whatsapp:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #00e676;
+  opacity: 0;
+  animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp:before {
+  animation-delay: 1s;
+}
+
+.btn-whatsapp:after {
+  animation-delay: 1.3s;
+}
+
+.btn-whatsapp img {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes onda {
+  0% {
+    transform: scale(1);
   }
-  body {
-    background-image: url(../assets/pagina/fondo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    height: 100vh;
-    /* background-color: brown; */
+
+  15% {
+    opacity: 1;
   }
-  main .container__accesories {
-   
-    padding: 100px 15px;
-    display: flex;
-    justify-content: space-evenly;
-    
+
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
   }
-  main .accesories{
-    width: 100%;
-    height: 1000px;
-    display: inline-block;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 100px;
-    
+}
+
+@media screen and (max-width:1000px) {
+  .home {
+    margin-top: -20px;
   }
-  main .titulo{
-    color: aqua;
-    font-size: 50px;
-    text-align: center;
-    padding: 35px;
-   
+
+  .container__history {
+    padding: 10px 15px;
 
   }
+
+  .titulo__history {
+    margin: 60px auto;
+    width: 250px;
+    height: 70px;
+    background: #f8b188;
+    border-radius: 10px 0 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo__history h1 {
+    font-family: 'Roboto Black';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    color: #000000;
+    margin: 0 auto;
+  }
+
+
+  .formulario {
+    width: 200%;
+    height: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .name__history {
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .name__history input {
+    width: 70%;
+    height: auto;
+    margin-left: 25px;
+    border: 0.2;
+  }
+
+  .name__history input::placeholder {
+    font-size: 8px;
+  }
+
+  .cuenta__history input {
+    width: 82%;
+    height: 240px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .cuenta__history input::placeholder {
+    width: 99%;
+    font-size: 10px;
+    line-height: inherit;
+    opacity: 0.5;
+    white-space: normal;
+
+  }
+
+  .foto__history {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: -900px;
+    margin-top: 20px;
+  }
+
+  .subir__history {
+    width: 48%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .subir__history input {
+    width: 100%;
+    height: 100%;
+    left: -100px;
+    white-space: normal;
+  }
+
+
+  .subir__history label {
+    margin-left: 10px;
+    font-size: 12px;
+
+  }
+
+
+  .button {
+    margin: 100px auto;
+    width: 140px;
+    height: 70px;
+    border-radius: 15;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 380px;
+  }
+
+
+  .text__history p {
+    width: 60%;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: -20px;
+
+
+  }
+
+}
+
+@media screen and (max-width:320px) {
+
+
+  .formulario {
+    width: 200%;
+    height: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .titulo__history {
+    width: 100%;
+  }
+
+  .titulo__history h1 {
+    font-size: 25px;
+  }
+
+  .name__history {
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    border: px solid #000000;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+
+  .name__history input {
+    width: 100%;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 9px;
+
+  }
+
+  .cuenta__history input {
+    width: 82%;
+    height: 240px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .foto__history {
+    width: 50%;
+    height: 100%;
+  }
+
+  .foto__history__1 {
+    width: 20%;
+    height: 100%;
+    background-color: #00e676;
+
+  }
+
+  .subir__history {
+    width: 48%;
+    height: auto;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .subir__history label {
+    margin-left: -10px;
+    font-size: 10px;
+  }
+
+
+  .button {
+    margin: 90px auto;
+    width: 140px;
+    height: 70px;
+    border-radius: 15;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 250px;
+  }
+
+  .text__history p {
+    width: 60%;
+    display: flex;
+    font-size: 9px;
+    font-weight: bold;
+    margin-left: -20px;
+
+
+  }
+
+}

@@ -15,7 +15,7 @@
 
 <body>
 <header>
-        <?php include '../header.php'; ?>
+<?php include '../src/header.php'; ?>
     </header>
 
     <main>
@@ -168,11 +168,14 @@
                 </div>
             </div>
         </section>
+        <a href="https://wa.me/573197531345" class="btn-whatsapp">
+            <img src="../assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
+        </a>
     </main>
 
     <footer>
 
-        <?php include '../footer.php'; ?>
+    <?php include '../src/footer.php'; ?>
 
     </footer>
 </body>

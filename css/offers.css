@@ -1,39 +1,184 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-  }
-  body {
-    background-image: url(../assets/pagina/fondo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    height: 100vh;
-    /* background-color: brown; */
-  }
-  main .container__accesories {
-   
-    padding: 100px 15px;
-    display: flex;
-    justify-content: space-evenly;
-    
-  }
-  main .accesories{
-    width: 100%;
-    height: 1000px;
-    display: inline-block;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 100px;
-    
-  }
-  main .titulo{
-    color: aqua;
-    font-size: 50px;
-    text-align: center;
-    padding: 35px;
-   
 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+/*PRODUCTOS*/
+.barra {
+  width: 100%;
+  height: auto;
+  margin-top: -90px;
+  display: flex;
+  text-align: end;
+  justify-content: center;
+  background-color: #f1c098;
+  padding: 15px;
+}
+
+.products {
+  padding: 100px 15px;
+  background-image: url("../assets/perro/producto1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+
+}
+
+
+.products__title {
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #000;
+  background: #ededed;
+  width: 400px;
+  margin: 0px auto;
+  margin-bottom: 80px;
+  margin-top: 100px;
+  background: #C6DCF7;
+  border-radius: 50px 0px 0px 50px;
+  padding: 15px;
+}
+
+.container__products {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.products__select {
+  margin: 0 0 0 auto;
+  height: 30px;
+  overflow: hidden;
+  width: 230px;
+  position: relative;
+}
+
+main select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  width: 250px;
+}
+
+main select:focus {
+  outline: none;
+}
+
+.products__select::after {
+  content: "\025be";
+  display: table-cell;
+  padding-top: 7px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  pointer-events: none;
+}
+
+
+.card {
+  width: 400px;
+  height: 400px;
+  background: #ededed;
+  box-shadow: 10px 0px 8px 2px rgba(0, 0, 0, .9);
+  margin: 20px 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+.card__img {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  padding-top: 40px;
+}
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #000;
+  width: 100%;
+  background: #015aff40;
+  text-align: center;
+  transform: translateY(100px);
+  transition: all .6s;
+}
+
+.card__title {
+  text-transform: uppercase;
+  padding: 4px 0;
+  color: #777777;
+}
+
+.card__link {
+  display: inline-block;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: #777777;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+
+.card__link:hover {
+  color: #000;
+}
+
+.card__paragraph {
+  font-size: 18px;
+  color: #777777;
+}
+
+.card:hover .card__hover {
+  transform: translateY(0);
+}
+
+@media screen and (max-width:800px) {
+  .barra {
+    width: 100%;
+    height: auto;
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    background-color: #fdbfab;
+    font-size: 10px;
   }
+  .products__title {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000;
+    background: #ededed;
+    width: 200px;
+    margin-top: 40px;
+    margin-right: 0;
+    background: #3b8df1;
+    
+  }
+}

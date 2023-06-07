@@ -1,34 +1,19 @@
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
-  }
-  body {
-    /* background-image: url(../assets/pagina/fondo.png); */
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-size: 100% 100%; */
-    background-attachment: fixed;
-    height: 100vh;
-  }
-  
-  
-/*PRODUCTOS*/
-main .products{
-    padding: 100px 15px;
-    background-image: url("../assets/perro/producto1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    
-   
 }
 
 
-main .products__title{
+
+/*PRODUCTOS*/
+
+
+.products__title {
     text-align: center;
-    font-size: 60px;
+    font-size: 45px;
     text-transform: uppercase;
     color: #000;
     background: #ededed;
@@ -37,7 +22,8 @@ main .products__title{
     margin-bottom: 80px;
     margin-top: 100px;
 }
-main .container__products{
+
+.container__products {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -46,41 +32,45 @@ main .container__products{
 }
 
 
-main .products__select {
-  /* margin:20px auto 40px auto;	 */
-  margin: 0  0 0 auto;
-  /* border:1px solid #d9d9d9; */
-  height:30px;
-  overflow: hidden;
-  width: 230px;
-  position:relative;
-}
-main select {
-  background: transparent;
-  border: none;
-  font-size: 14px;
-  height: 30px;
-  padding: 5px;
-  width: 250px;
-}
-main select:focus{ outline: none;}
-
-main .products__select::after{
- content:"\025be";
- display:table-cell;
- padding-top:7px;
- text-align:center;
- width:30px;
- height:30px;
- background-color:#d9d9d9;
- position:absolute;
- top:0;
- right:0px;	
- pointer-events: none;
+.products__select {
+    /* margin:20px auto 40px auto;	 */
+    margin: 0 0 0 auto;
+    /* border:1px solid #d9d9d9; */
+    height: 30px;
+    overflow: hidden;
+    width: 230px;
+    position: relative;
 }
 
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+}
 
-main .card{
+main select:focus {
+    outline: none;
+}
+
+.products__select::after {
+    content: "\025be";
+    display: table-cell;
+    padding-top: 7px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    pointer-events: none;
+}
+
+
+.card {
     width: 400px;
     height: 400px;
     background: #ededed;
@@ -92,24 +82,24 @@ main .card{
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
 
-main .card__img{
+.card__img {
     width: 300px;
     height: 300px;
     display: inline-block;
     padding-top: 40px;
 }
 
-.card__img img{
+.card__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-main .card__hover{
+.card__hover {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -121,13 +111,13 @@ main .card__hover{
     transition: all .6s;
 }
 
-main .card__title{
+.card__title {
     text-transform: uppercase;
     padding: 4px 0;
     color: #777777;
 }
 
-main .card__link{
+.card__link {
     display: inline-block;
     padding-bottom: 2px;
     text-decoration: none;
@@ -137,17 +127,15 @@ main .card__link{
 }
 
 
-main .card__link:hover{
+.card__link:hover {
     color: #000;
 }
 
-main .card__paragraph{
+.card__paragraph {
     font-size: 18px;
     color: #777777;
 }
 
-main .card:hover .card__hover{
+.card:hover .card__hover {
     transform: translateY(0);
 }
-
-

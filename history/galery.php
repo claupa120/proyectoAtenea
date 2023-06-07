@@ -11,31 +11,41 @@
         rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cf9fd5b80a.js" crossorigin="anonymous"></script>
 
-    <title>Accesorios</title>
-</head>
-<title>En construcción</title>
+    <title>Galeria</title>
 </head>
 
 <body>
     <header>
-        <?php include '../header.php'; ?>
+        <?php include '../src/header.php'; ?>
     </header>
     <main>
-        <section class="container__accesories">
+        <section class="home">
+            <div class="container__galery">
 
-            <div class="accesories">
-                <h1 class="titulo">¡Estamos trabajando en esta página!</h1>
-                <p>Disculpa las molestias. Estamos realizando mejoras en nuestro sitio web para brindarte una mejor
-                    experiencia. Vuelve pronto para ver las actualizaciones.</p> 
-                <img src="../assets/pagina/SITIO-EN-CONSTRUCCION.jpg" alt="">
+                <div class="titulo__galery">
+                    <h1>Romeo</h1>
+                </div>
+                <div class="galery">
+                    <div class="parrafo__galery">
+                        <p>Romeo es un gatico, recogido de la calle siendo aun bebe, enfermo, solito y desamparado. El
+                            ha llegado a alegrar nuestras vidas, es un nene caprichoso, amoroso.
+                            Nos encanta su compañía.</p>
+                    </div>
+                    <div class="img__galery">
+                        <img src="../assets/gato/Romeo.jpeg" alt="">
+                    </div>
+                </div>
+
 
             </div>
         </section>
-
+        <a href="https://wa.me/573197531345" class="btn-whatsapp">
+            <img src="../assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
+        </a>
     </main>
     <footer>
 
-        <?php include '../footer.php'; ?>
+        <?php include '../src/footer.php'; ?>
 
     </footer>
 </body>

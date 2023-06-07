@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/accesorie.css" />
+    <link rel="stylesheet" href="../css/categorias.css" />
     <link rel="shortcut icon" href="../assets/pagina/logo.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
@@ -13,12 +13,11 @@
 
     <title>Accesorios</title>
 </head>
-<title>En construcción</title>
-</head>
+
 
 <body>
     <header>
-        <?php include '../header.php'; ?>
+        <?php include '../src/header.php'; ?>
     </header>
     <main>
         <section class="products">
@@ -129,10 +128,13 @@
                 </div>
             </div>
         </section>
+        <a href="https://wa.me/573197531345" class="btn-whatsapp">
+            <img src="../assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
+        </a>
     </main>
     <footer>
 
-        <?php include '../footer.php'; ?>
+        <?php include '../src/footer.php'; ?>
 
     </footer>
 </body>

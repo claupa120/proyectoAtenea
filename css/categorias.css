@@ -5,18 +5,23 @@
   font-family: "Raleway", sans-serif;
 }
 body {
-  /* background-image: url(../assets/pagina/fondo.png); */
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: 100% 100%; */
   background-attachment: fixed;
   height: 100vh;
+}
+header{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 999;
+
 }
 
 
 /*PRODUCTOS*/
-main .products{
-  padding: 100px 15px;
+.products{
+  padding: 50px 15px;
   background-image: url("../assets/perro/producto1.jpg");
   background-size: cover;
   background-position: center;
@@ -26,18 +31,19 @@ main .products{
 }
 
 
-main .products__title{
+.products__title{
   text-align: center;
-  font-size: 60px;
+  font-size: 45px;
   text-transform: uppercase;
   color: #000;
   background: #ededed;
   width: 400px;
   margin: 0px auto;
-  margin-bottom: 80px;
-  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-top: 150px;
+  
 }
-main .container__products{
+.container__products{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -46,10 +52,8 @@ main .container__products{
 }
 
 
-main .products__select {
-/* margin:20px auto 40px auto;	 */
+.products__select {
 margin: 0  0 0 auto;
-/* border:1px solid #d9d9d9; */
 height:30px;
 overflow: hidden;
 width: 230px;
@@ -65,7 +69,7 @@ width: 250px;
 }
 main select:focus{ outline: none;}
 
-main .products__select::after{
+.products__select::after{
 content:"\025be";
 display:table-cell;
 padding-top:7px;
@@ -80,7 +84,7 @@ pointer-events: none;
 }
 
 
-main .card{
+.card{
   width: 400px;
   height: 400px;
   background: #ededed;
@@ -109,7 +113,7 @@ main .card__img{
   object-position: center;
 }
 
-main .card__hover{
+.card__hover{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -121,13 +125,13 @@ main .card__hover{
   transition: all .6s;
 }
 
-main .card__title{
+.card__title{
   text-transform: uppercase;
   padding: 4px 0;
   color: #777777;
 }
 
-main .card__link{
+.card__link{
   display: inline-block;
   padding-bottom: 2px;
   text-decoration: none;
@@ -137,17 +141,71 @@ main .card__link{
 }
 
 
-main .card__link:hover{
+.card__link:hover{
   color: #000;
 }
 
-main .card__paragraph{
+.card__paragraph{
   font-size: 18px;
   color: #777777;
 }
 
-main .card:hover .card__hover{
+.card:hover .card__hover{
   transform: translateY(0);
 }
+.btn-whatsapp {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+}
 
+.btn-whatsapp:before,
+.btn-whatsapp:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #00e676;
+  opacity: 0;
+  animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp:before {
+  animation-delay: 1s;
+}
+
+.btn-whatsapp:after {
+  animation-delay: 1.3s;
+}
+
+.btn-whatsapp img {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes onda {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+@media screen and (max-width: 1000px) {
+
+  .products__title{
+  background: #f0e1cd;
+  width: 320px;
+ }
+}
 

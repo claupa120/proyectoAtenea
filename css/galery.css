@@ -1,39 +1,203 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-  }
-  body {
-    background-image: url(../assets/pagina/fondo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    height: 100vh;
-    /* background-color: brown; */
-  }
-  main .container__accesories {
-   
-    padding: 100px 15px;
-    display: flex;
-    justify-content: space-evenly;
-    
-  }
-  main .accesories{
-    width: 100%;
-    height: 1000px;
-    display: inline-block;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 100px;
-    
-  }
-  main .titulo{
-    color: aqua;
-    font-size: 50px;
-    text-align: center;
-    padding: 35px;
-   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
 
+
+.home {
+  width: 100%;
+  height: auto;
+}
+
+
+.container__galery {
+
+  padding: 100px 15px;
+  background-image: url('../assets/pagina/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.titulo__galery {
+  margin: 100px auto;
+  position: relative;
+  width: 347px;
+  height: auto;
+  font-family: 'ZCOOL XiaoWei';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #0A9CFD;
+
+
+}
+
+.galery {
+  display: flex;
+  justify-content: center;
+
+}
+
+.parrafo__galery {
+
+  width: 40%;
+  height: auto;
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: justify;
+  color: #0F0E0E;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img__galery {
+
+  position: relative;
+  width: 45%;
+  height: auto;
+  left: 25px;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.img__galery img {
+
+  width: 500px;
+  height: 500px;
+  border: 5px solid #F56B1D;
+  border-radius: 183.5px 183.5px 183.5px 0px;
+
+}
+
+
+.btn-whatsapp {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btn-whatsapp:before,
+.btn-whatsapp:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #00e676;
+  opacity: 0;
+  animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp:before {
+  animation-delay: 1s;
+}
+
+.btn-whatsapp:after {
+  animation-delay: 1.3s;
+}
+
+.btn-whatsapp img {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes onda {
+  0% {
+    transform: scale(1);
   }
+
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .home {
+    width: 50%;
+    height: auto;
+  }
+  .titulo__galery {
+    margin: -60px auto;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font-family: 'ZCOOL XiaoWei';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 96px;
+  }
+  .titulo__galery h1{
+    margin: 0 auto;
+  }
+  .galery{
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+   
+  .parrafo__galery {
+
+    width: 100%;
+    height: auto;
+    
+    
+  }
+  
+  .img__galery {
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  .img__galery img {
+  
+  width: 300px;
+  height: auto;
+  
+  
+  }
+
+  
+  
+  }
+
+
+@media screen and (max-width:320px) {
+  .home {
+    width: 15%;
+    height: auto;
+  }
+}
