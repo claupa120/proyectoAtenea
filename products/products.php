@@ -1,3 +1,4 @@
+<?php include '../db/conexion.php';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cf9fd5b80a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Productos</title>
 </head>
 
-<body>
+<body onload="ordenarArticulos()">
     <header>
         <?php include '../src/header.php'; ?>
     </header>
@@ -22,121 +24,25 @@
         <section class="products">
             <h1 class="products__title">productos</h1>
             <div class="products__select">
-                <select>
-                    <option>La primera opción</option>
-                    <option>La segunda opción</option>
-                    <option>La tercera opción</option>
+                <select id="select" onchange="ordenarArticulos()">
+                    <option value="nombre_asc">Ordenar por nombre (A-Z)</option>
+                    <option value="precio_asc">Ordenar por precio (menor a mayor)</option>
+                    <option value="precio_desc">Ordenar por precio (mayor a menor)</option>
                 </select>
             </div>
             <div class="container__products">
-                <div class="card">
-                    <div class="card__img">
-                        <img src="../assets/perro/producto2.jpg" alt="" />
-                    </div>
-
-
-                    <div class="card__hover">
-                        <h3 class="card__title">titulo</h3>
-                        <a href="#" class="card__link">solicitar informacion</a>
-                        <p class="card__paragraph">$ 30.000</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__img">
-                        <img src="../assets/perro/producto3.jpg" alt="" />
-                    </div>
-
-                    <div class="card__hover">
-                        <h3 class="card__title">titulo</h3>
-                        <a href="#" class="card__link">solicitar informacion</a>
-                        <p class="card__paragraph">$ 30.000</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__img">
-                        <img src="../assets/perro/producto4.jpg" alt="" />
-                    </div>
-
-                    <div class="card__hover">
-                        <h3 class="card__title">titulo</h3>
-                        <a href="#" class="card__link">solicitar informacion</a>
-                        <p class="card__paragraph">$ 30.000</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__img">
-                        <img src="../assets/perro/producto4.jpg" alt="" />
-                    </div>
-
-                    <div class="card__hover">
-                        <h3 class="card__title">titulo</h3>
-                        <a href="#" class="card__link">solicitar informacion</a>
-                        <p class="card__paragraph">$ 30.000</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__img">
-                        <img src="../assets/perro/producto4.jpg" alt="" />
-                    </div>
-
-                    <div class="card__hover">
-                        <h3 class="card__title">titulo</h3>
-                        <a href="#" class="card__link">solicitar informacion</a>
-                        <p class="card__paragraph">$ 30.000</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__img">
-                        <img src="../assets/perro/producto4.jpg" alt="" />
-                    </div>
-
-                    <div class="card__hover">
-                        <h3 class="card__title">titulo</h3>
-                        <a href="#" class="card__link">solicitar informacion</a>
-                        <p class="card__paragraph">$ 30.000</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__img">
-                        <img src="../assets/perro/producto4.jpg" alt="" />
-                    </div>
-
-                    <div class="card__hover">
-                        <h3 class="card__title">titulo</h3>
-                        <a href="#" class="card__link">solicitar informacion</a>
-                        <p class="card__paragraph">$ 30.000</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__img">
-                        <img src="../assets/perro/producto4.jpg" alt="" />
-                    </div>
-
-                    <div class="card__hover">
-                        <h3 class="card__title">titulo</h3>
-                        <a href="#" class="card__link">solicitar informacion</a>
-                        <p class="card__paragraph">$ 30.000</p>
-                    </div>
-                </div>
+                <!-- Aquí se mostrarán los productos cargados por offers.php -->
             </div>
         </section>
         <a href="https://wa.me/573197531345" class="btn-whatsapp">
             <img src="../assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
         </a>
     </main>
-
     <footer>
-
         <?php include '../src/footer.php'; ?>
-
     </footer>
+    <script src="../js/ordenar.js"></script> 
+  
 </body>
 
 </html>

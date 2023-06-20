@@ -9,7 +9,7 @@
     <meta name="robots" content="index,follow" />
     <meta name="author" content="Claudia Paola Suarez" />
     <link rel="stylesheet" href="../css/questions.css">
-    <link rel="shortcut icon" href="./assets/pagina/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/pagina/logo.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cf9fd5b80a.js" crossorigin="anonymous"></script>

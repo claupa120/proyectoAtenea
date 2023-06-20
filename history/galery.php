@@ -1,3 +1,4 @@
+<?php include '../db/conexion.php';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,24 +22,34 @@
     <main>
         <section class="home">
             <div class="container__galery">
+<?php
+$sql = "SELECT * FROM historiasmascotas";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $titulo = $row["NombreMascota"];
+        $historia = $row["Historia"];
+        $imagen = $row["foto"];
 
-                <div class="titulo__galery">
-                    <h1>Romeo</h1>
-                </div>
-                <div class="galery">
-                    <div class="parrafo__galery">
-                        <p>Romeo es un gatico, recogido de la calle siendo aun bebe, enfermo, solito y desamparado. El
-                            ha llegado a alegrar nuestras vidas, es un nene caprichoso, amoroso.
-                            Nos encanta su compañía.</p>
-                    </div>
-                    <div class="img__galery">
-                        <img src="../assets/gato/Romeo.jpeg" alt="">
-                    </div>
-                </div>
+        echo' <div class="titulo__galery"><h1>' .$titulo . '</h1>';
+        echo'</div>';
+        echo'<div class="galery">';
+        echo'<div class="parrafo__galery">';
+        echo '<p>'. $historia . '</p>';
+        echo '</div>';
+        echo '<div class="img__galery">';
+        echo '<img src="../assets/historia/' . $imagen . '" alt="" />';
+        echo '</div>';
+        echo '</div>';  
+    }      
+} else {
+    echo "No se encontraron artículos.";
+}
+$result->free_result();
+$conn->close();
+?>
 
-
-            </div>
-        </section>
+           
         <a href="https://wa.me/573197531345" class="btn-whatsapp">
             <img src="../assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
         </a>

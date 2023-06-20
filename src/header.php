@@ -1,3 +1,4 @@
+<?php include '../db/conexion.php';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cf9fd5b80a.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title></title>
 </head>
 
 <body>
@@ -18,60 +19,65 @@
         <nav class="menu">
             <section class="menu__container">
                 <img src="../assets/pagina/logo.png" alt="" class="header__img" />
-              
+
                 <div class="header__input__container">
-                    <form action="#">
+                <form method="GET" action="../back/buscar.php">
                         <div class="header__input ">
-                            <input type="text" placeholder="Buscar..." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="QUE ESTAS BUSCANDO?" name="busqueda">
+                            <button type="submit" value="Buscar"><i class="fa fa-search"></i></button>
                         </div>
                     </form>
+                    
                 </div>
 
 
                 <ul class="menu__links">
                     <li class="menu__item">
                         <a href="../index.php" class="product__link">
-                            <h3 class="menu__link"> <i class="fa-solid fa-house"> </i> Inicio</h3>
+                            <h3 class="menu__link__inicio"> <i class="fa-solid fa-house"> </i> Inicio</h3>
                         </a>
                     </li>
 
 
                     <li class="menu__item  menu__item--show">
-                        <a href="#" class="menu__link">Categorias <img src="../assets/arrow.svg"
+                        <a href="#" class="menu__link__inicio">Categorias <img src="../assets/arrow.svg"
                                 class="menu__arrow"></a>
 
                         <ul class="menu__nesting">
                             <li class="menu__inside">
-                                <a href="../category/toy.php" class="menu__link menu__link--inside">Juguetes</a>
+                                <a href="../category/toy.php" class="menu__link__inicio menu__link--inside">Juguetes</a>
                             </li>
                             <li class="menu__inside">
-                                <a href="../category/toilet.php" class="menu__link menu__link--inside">Aseo y
+                                <a href="../category/toilet.php" class="menu__link__inicio menu__link--inside">Aseo y
                                     belleza</a>
                             </li>
                             <li class="menu__inside">
-                                <a href="../category/fleas.php" class="menu__link menu__link--inside">Anti-pulgas</a>
+                                <a href="../category/fleas.php" class="menu__link__inicio menu__link--inside">Anti-pulgas</a>
                             </li>
                             <li class="menu__inside">
-                                <a href="../category/feeder.php" class="menu__link menu__link--inside">Comederos</a>
+                                <a href="../category/feeder.php" class="menu__link__inicio menu__link--inside">Comederos</a>
                             </li>
                             <li class="menu__inside">
                                 <a href="../category/accesories.php"
-                                    class="menu__link menu__link--inside">Accesorios</a>
+                                    class="menu__link__inicio menu__link--inside">Accesorios</a>
                             </li>
                             <li class="menu__inside">
-                                <a href="../category/beds.php" class="menu__link menu__link--inside">Camas y
+                                <a href="../category/beds.php" class="menu__link__inicio menu__link--inside">Camas y
                                     cargadores</a>
                             </li>
                             <li class="menu__inside">
-                                <a href="../category/snack.php" class="menu__link menu__link--inside">Snack y
+                                <a href="../category/snack.php" class="menu__link__inicio menu__link--inside">Snack y
                                     premios</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="../category/sand.php" class="menu__link__inicio menu__link--inside">Arenas y
+                                    areneras</a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="menu__item">
-                        <a href="https://wa.me/573197531345" class="menu__link">Estamos en linea<i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/573197531345" class="menu__link__inicio">Estamos en linea<i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 
                     </li>
 

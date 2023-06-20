@@ -233,7 +233,7 @@ button:hover {
 
 @media screen and (max-width:1000px) {
   .home {
-    margin-top: -20px;
+    margin-top: 20px;
   }
 
   .container__history {

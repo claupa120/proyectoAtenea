@@ -24,7 +24,7 @@
                 <div class="titulo__history">
                     <h1>Nuestra historia</h1>
                 </div>
-                <form class="formulario">
+                <form class="formulario" method="$_POST">
                     <div class="name__history">
                         <label for="nombre">Nombre: </label>
                         <input type="text" id="nombre" name="name" placeholder="Escribe el nombre de tu hijo peludo">

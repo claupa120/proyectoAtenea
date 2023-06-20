@@ -1,18 +1,34 @@
 * {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
 
+body {
+  background-image: url('../assets/pagina/fondo.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin-top: -100px;
+  position: absolute;
+}
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  margin-top: 50px;
+
+}
 
 /*PRODUCTOS*/
 .barra {
   width: 100%;
   height: auto;
-  margin-top: -90px;
+  margin-top: 155px;
   display: flex;
   text-align: end;
   justify-content: center;
@@ -22,14 +38,8 @@
 
 .products {
   padding: 100px 15px;
-  background-image: url("../assets/perro/producto1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
 
 }
-
 
 .products__title {
   text-align: center;
@@ -51,7 +61,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .products__select {
@@ -62,7 +72,7 @@
   position: relative;
 }
 
-main select {
+select {
   background: transparent;
   border: none;
   font-size: 14px;
@@ -71,7 +81,7 @@ main select {
   width: 250px;
 }
 
-main select:focus {
+select:focus {
   outline: none;
 }
 
@@ -90,6 +100,7 @@ main select:focus {
 }
 
 
+
 .card {
   width: 400px;
   height: 400px;
@@ -104,6 +115,7 @@ main select:focus {
   cursor: pointer;
 
 }
+
 .card__img {
   width: 300px;
   height: 300px;
@@ -145,7 +157,6 @@ main select:focus {
   font-size: 18px;
 }
 
-
 .card__link:hover {
   color: #000;
 }
@@ -159,6 +170,32 @@ main select:focus {
   transform: translateY(0);
 }
 
+@media screen and (max-width:1000px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+
+  .products {
+    padding: 350px 15px;
+
+  }
+
+
+  .container__products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .card {
+    width: 300px;
+    height: 300px;
+
+  }
+}
+
 @media screen and (max-width:800px) {
   .barra {
     width: 100%;
@@ -169,8 +206,11 @@ main select:focus {
     background-color: #fdbfab;
     font-size: 10px;
   }
+
   .products__title {
     text-align: center;
+    justify-content: center;
+    display: center;
     font-size: 30px;
     text-transform: uppercase;
     color: #000;
@@ -179,6 +219,6 @@ main select:focus {
     margin-top: 40px;
     margin-right: 0;
     background: #3b8df1;
-    
+
   }
 }

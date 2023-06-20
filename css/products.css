@@ -1,5 +1,4 @@
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,20 +6,88 @@
 }
 
 
+body {
+    background-image: url('../assets/pagina/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top: -100px;
+    position: absolute;
+  }
+
+  
+header {
+    width: 100%;
+    z-index: 999;
+    margin-top: 50px;
+    position: fixed;
+  }
 
 /*PRODUCTOS*/
-
+/* Estilos para el select */
+/* .select1{
+    margin-right: 500px;
+    display: flex;
+    background-color: #000;
+} */
+/* #ordenamientoForm{
+    margin-top: 500px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+} */
+select {
+    margin-top: 500px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para las opciones del select */
+  select option {
+    font-size: 14px;
+  }
+  
+  /* Estilos para el botón de enviar */
+  input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0;
+    display: flex;
+  }
+  
+  /* Estilos para la etiqueta del select */
+  label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el contenedor del formulario */
+  form {
+    margin-bottom: 16px;
+  }
+  
 
 .products__title {
     text-align: center;
-    font-size: 45px;
+    font-size: 50px;
     text-transform: uppercase;
-    color: #000;
+    color: #3f3c3c;
     background: #ededed;
     width: 400px;
     margin: 0px auto;
     margin-bottom: 80px;
-    margin-top: 100px;
+    margin-top: 320px;
+    position: relative;
 }
 
 .container__products {
@@ -28,15 +95,14 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 190px;
 }
 
 
 .products__select {
-    /* margin:20px auto 40px auto;	 */
-    margin: 0 0 0 auto;
-    /* border:1px solid #d9d9d9; */
-    height: 30px;
+
+    margin: -20px 0 -50px auto;
+    height: auto;
     overflow: hidden;
     width: 230px;
     position: relative;
@@ -49,6 +115,8 @@ select {
     height: 30px;
     padding: 5px;
     width: 250px;
+    margin-top: 20px;
+    margin-bottom: -300px;
 }
 
 main select:focus {
@@ -62,7 +130,7 @@ main select:focus {
     text-align: center;
     width: 30px;
     height: 30px;
-    background-color: #d9d9d9;
+    background-color: #eef4f8;
     position: absolute;
     top: 0;
     right: 0px;
@@ -138,4 +206,31 @@ main select:focus {
 
 .card:hover .card__hover {
     transform: translateY(0);
+}
+@media screen  and (max-width:1000px) {
+    body{
+        width: 100%;
+        height: auto;
+    }
+    .products__title {
+        font-size: 35px;
+        width: 250px;
+        margin: 0px auto;
+        margin-bottom: 30px;
+        margin-top: 300px;
+        justify-content: center;
+        align-self: center;
+    } 
+    .container__products {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+  
+    .card {
+        width: 300px;
+        height: 300px;
+         
+    }
 }

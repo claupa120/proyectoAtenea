@@ -1,3 +1,4 @@
+<?php include './db/conexion.php';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,6 +10,7 @@
     <meta name="robots" content="index,follow" />
     <meta name="author" content="Claudia Paola Suarez" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="shortcut icon" href="./assets/pagina/logo.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
@@ -22,12 +24,14 @@
             <section class="menu__container">
                 <img src="./assets/pagina/logo.png" alt="" class="header__img" />
                 <div class="header__input__container">
-                    <form action="#">
+                    <form method="GET" action="./back/buscar.php">
                         <div class="header__input ">
-                            <input type="text" placeholder="Buscar..." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="QUE ESTAS BUSCANDO?" name="busqueda">
+                            <button type="submit" value="Buscar"><i class="fa fa-search"></i></button>
                         </div>
                     </form>
+
+
                 </div>
 
                 <ul class="menu__links">
@@ -65,11 +69,16 @@
                             <li class="menu__inside">
                                 <a href="./category/snack.php" class="menu__link menu__link--inside">Snack y premios</a>
                             </li>
+                            <li class="menu__inside">
+                                <a href="./category/sand.php" class="menu__link menu__link--inside">Arenas y
+                                    areneras</a>
+                            </li>
                         </ul>
                     </li>
 
                     <li class="menu__item">
-                        <a href="https://wa.me/573197531345" class="menu__link">Estamos en linea<i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/573197531345" class="menu__link">Estamos en linea<i
+                                class="fa-brands fa-whatsapp"></i></a>
 
                     </li>
 
@@ -127,89 +136,55 @@
                 </h1>
             </div>
         </section>
+        <section class="products">
+    <div class="container__product">
+        <?php
+        // Consulta para obtener los artículos en oferta
+        $sql = "SELECT * FROM articulo WHERE oferta = 1 LIMIT 3";
+        $result = $conn->query($sql);
+
+        // Verificar si hay resultados
+        if ($result->num_rows > 0) {
+            // Recorrer los resultados y mostrar los artículos
+            while ($row = $result->fetch_assoc()) {
+                $idArticulo = $row["idarticulo"];
+                $titulo = $row["nombre"];
+                $imagen = $row["foto"];
+                $precio = $row["precio_venta"];
+                echo '<div class="card">';
+                echo '<div class="card__img">';
+                echo '<a href="./products/description.php?id=' . $idArticulo . '">';
+                echo '<img src="./assets/' . $imagen . '" alt="" />';
+                echo '</a>';
+                echo '</div>';
+                echo '<div class="card__hover">';
+                echo '<h3 class="card__title">' . $titulo . '</h3>';
+                echo '<a href="https://wa.me/573197531345" class="card__link">solicitar información</a>';
+                echo '<p class="card__paragraph">$ ' . $precio . '</p>';
+                echo '</div>';
+                echo '</div>';
+            }
+        } else {
+            echo "No se encontraron artículos en oferta.";
+        }
+
+        $result->free_result();
+        $conn->close();
+        ?>
+    </div>
+</section>
 
 
-        <section class="product">
+         </main>
 
-            <div class="container__product">
-                <div class="product__img">
-                    <a href="./products/descriptionp.php"><img src="assets/perro/producto1.jpg" alt="" /></a>
+    <a href="https://wa.me/573197531345" class="btn-whatsapp">
+        <img src="./assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
+    </a>
 
-                </div>
 
-                <div class="product__img">
-                    <a href="./products/descriptionp.php"><img src="assets/perro/producto2.jpg" alt="" /></a>
-
-                </div>
-                <div class="product__img">
-                    <a href="./products/descriptionp.php"><img src="assets/perro/producto3.jpg" alt="" /></a>
-
-                </div>
-                <div class="product__img">
-                    <a href="./products/descriptionp.php"><img src="assets/perro/producto4.jpg" alt="" /></a>
-
-                </div>
-            </div>
-        </section>
-        <a href="https://wa.me/573197531345" class="btn-whatsapp">
-            <img src="./assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
-        </a>
-    </main>
-
+ 
     <footer>
-
-        <div class="container__footer">
-
-            <div class="footer__services">
-                <h1 class="services__title">Preguntas frecuentes</h1>
-                <a href="./products/questions.php" class="services__link">
-                    <p class="services__paragraph">Como es el pago?</p>
-                </a>
-
-                <a href="./products/questions.php" class="services__link">
-                    <p class="services__paragraph">Condiciones de entrega</p>
-                </a>
-
-                <a href="./products/questions.php" class="services__link">
-                    <p class="services__paragraph">Pedido minimo</p>
-                </a>
-
-                <a href="./products/questions.php" class="services__link">
-                    <p class="services__paragraph">ubicacion</p>
-                </a>
-            </div>
-
-            <div class="footer__description">
-                <h1 class="description__title">+ Que Mascotas</h1>
-                <p class="description__copy">
-                    Somos la opción perfecta para cuidar a tus mascotas. En nuestra tienda encontrarás productos de alta
-                    calidad, enfocados en el bienestar y la felicidad de tu mejor amigo peludo
-                </p>
-            </div>
-
-            <div class="footer__text">
-                <div class="footer__img">
-                    <a href="#">
-                        <img src="./assets/pagina/facebook.ico" alt="">
-                    </a>
-
-                    <a href="#">
-                        <img src="./assets/pagina/Instagram.ico" alt="">
-                    </a>
-
-                    <a href="#">
-                        <img src="./assets/pagina/tiktok.png" alt="">
-                    </a>
-                </div>
-
-                <div class="text__copy">
-                    <p class="text__paragraph">
-                        todos los derechos reservados &copy; -2023
-                    </p>
-
-
-                </div>
-
+        <?php include './src/footer.php'; ?>
     </footer>
     <script src="./js/app.js"></script>
 </body>
