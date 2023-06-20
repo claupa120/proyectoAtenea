@@ -180,6 +180,12 @@ select:focus {
     padding: 350px 15px;
 
   }
+  .barra{
+    margin-top: -80px;
+  }
+.products__title{
+  margin-top: 100px;
+}
 
 
   .container__products {
@@ -216,7 +222,7 @@ select:focus {
     color: #000;
     background: #ededed;
     width: 200px;
-    margin-top: 40px;
+    margin-top:-240px;
     margin-right: 0;
     background: #3b8df1;
 

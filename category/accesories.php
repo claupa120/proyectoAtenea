@@ -27,7 +27,7 @@
             <!-- <form id="ordenamientoForm"> -->
             <!-- <label for="ordenamiento">Ordenar por:</label><br> -->
             <!-- <div class="products__select" onchange="ordenarArticulos()"> -->
-            <div class="products__select" id="ordenamientoForm">
+            <div class="products__select" >
 
                 <select name="ordenamiento">
                     <option value="az">Ordenar por nombre (A-Z)</option>
