@@ -14,7 +14,7 @@
     <title>Arena y areneras</title>
 </head>
 
-<body onload="ordenarArticulosSand()">
+<body onload="ordenarArticulos(8)">
     <header>
         <?php include '../src/header.php'; ?>
     </header>
@@ -22,7 +22,7 @@
     <main>
         <section class="products">
             <h1 class="products__title">Arena y areneras</h1>
-            <div class="products__select" onchange="ordenarArticulosSand()">
+            <div class="products__select" onchange="ordenarArticulos(8)">
                 <select id="select">
                     <option value="nombre_asc">Ordenar por nombre (A-Z)</option>
                     <option value="precio_asc">Ordenar por precio (menor a mayor)</option>

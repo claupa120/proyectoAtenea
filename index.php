@@ -46,7 +46,7 @@
                     <li class="menu__item  menu__item--show">
                         <a href="#" class="menu__link">Categorias <img src="./assets/arrow.svg" class="menu__arrow"></a>
 
-                        <ul class="menu__nesting">
+                        <ul class="menu__nesting" >
                             <li class="menu__inside">
                                 <a href="./category/toy.php" class="menu__link menu__link--inside">Juguetes</a>
                             </li>
@@ -187,6 +187,7 @@
         <?php include './src/footer.php'; ?>
     </footer>
     <script src="./js/app.js"></script>
+    
 </body>
 
 </html>

@@ -14,7 +14,7 @@
     <title>Aseo y belleza</title>
 </head>
 
-<body onload="ordenarArticulosToilet()">
+<body onload="ordenarArticulos(2)">
     <header>
         <?php include '../src/header.php'; ?>
     </header>
@@ -22,7 +22,7 @@
     <main>
         <section class="products">
             <h1 class="products__title">Aseo y belleza</h1>
-            <div class="products__select" onchange="ordenarArticulosToilet()">
+            <div class="products__select" onchange="ordenarArticulos(2)">
                 <select id="select">
                     <option value="nombre_asc">Ordenar por nombre (A-Z)</option>
                     <option value="precio_asc">Ordenar por precio (menor a mayor)</option>

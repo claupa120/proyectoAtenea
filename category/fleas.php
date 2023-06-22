@@ -14,7 +14,7 @@
     <title>Anti-pulgas</title>
 </head>
 
-<body onload="ordenarArticulosFleas()">
+<body onload="ordenarArticulos(3)">
     <header>
         <?php include '../src/header.php'; ?>
     </header>
@@ -22,7 +22,7 @@
     <main>
         <section class="products">
             <h1 class="products__title">Anti-pulgas</h1>
-            <div class="products__select" onchange="ordenarArticulosFleas()">
+            <div class="products__select" onchange="ordenarArticulos(3)">
                 <select id="select">
                     <option value="nombre_asc">Ordenar por nombre (A-Z)</option>
                     <option value="precio_asc">Ordenar por precio (menor a mayor)</option>

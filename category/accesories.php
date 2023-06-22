@@ -29,7 +29,7 @@
             <!-- <div class="products__select" onchange="ordenarArticulos()"> -->
             <div class="products__select" >
 
-                <select name="ordenamiento">
+            <div class="products__select" onchange="ordenarArticulos(5)">
                     <option value="az">Ordenar por nombre (A-Z)</option>
                     <option value="menor">Ordenar por precio (menor a mayor)</option>
                     <option value="mayor">Ordenar por precio (mayor a menor)</option>
@@ -45,6 +45,7 @@
 
 // Consulta para obtener los artículos
 $sql = "SELECT * FROM articulo WHERE idcategoria = 5";
+
 // Ejecutar la consulta y obtener los resultados
 $result = $conn->query($sql);
 
