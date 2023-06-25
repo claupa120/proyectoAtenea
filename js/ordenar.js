@@ -224,4 +224,23 @@ function ordenarArticulosSand() {
                 console.error('Error:', error);
             });
     }
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('.carousel');
+        const prevButton = document.querySelector('.carousel-arrow.prev');
+        const nextButton = document.querySelector('.carousel-arrow.next');
+    
+        prevButton.addEventListener('click', function() {
+          carousel.scrollBy({
+            left: -carousel.offsetWidth,
+            behavior: 'smooth'
+          });
+        });
+    
+        nextButton.addEventListener('click', function() {
+          carousel.scrollBy({
+            left: carousel.offsetWidth,
+            behavior: 'smooth'
+          });
+        });
+      });
       

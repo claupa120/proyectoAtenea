@@ -25,21 +25,7 @@ header {
     position: fixed;
   }
 
-/*PRODUCTOS*/
-/* Estilos para el select */
-/* .select1{
-    margin-right: 500px;
-    display: flex;
-    background-color: #000;
-} */
-/* #ordenamientoForm{
-    margin-top: 500px;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: flex;
-} */
+
 select {
     margin-top: 500px;
     padding: 8px;

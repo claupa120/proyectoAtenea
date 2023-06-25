@@ -1,4 +1,4 @@
-<?php include '../db/conexion.php';?>
+<?php  include '../db/conexion.php';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -17,46 +17,50 @@
 
 <body>
     <header>
-        <?php include '../src/header.php'; ?>
+        <?php  include '../src/header.php'; ?>
     </header>
-    <main>
-        <section class="home">
-            <div class="container__galery">
-<?php
-$sql = "SELECT * FROM historiasmascotas";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $titulo = $row["NombreMascota"];
-        $historia = $row["Historia"];
-        $imagen = $row["foto"];
+         <div class="carousel-container">
+        <button class="carousel-arrow prev">←</button>
+        <div class="carousel">
+          <?php
+          $sql = "SELECT * FROM historiasmascotas";
+          $result = $conn->query($sql);
+          
+          if ($result->num_rows > 0) {
+            $stories = $result->fetch_all(MYSQLI_ASSOC);
+          
+            foreach ($stories as $story) {
+              echo '<div class="carousel-item">';
+              echo '<div class="card">';
+              echo '<div class="card-body">';
+              echo '<h1 class="card-title">' . $story['NombreMascota'] . '</h1>';
+              echo '<p class="card-text">' . $story['Historia'] . '</p>';
+              echo '<div class="card-img-top">';
+              echo '<img src="../assets/historia/' . $story['foto'] . '" class="" alt="">';
+              echo '</div>';
+              echo '</div>';
+              echo '</div>';
+              echo '</div>';
+            }
+          } else {
+            echo "No se encontraron artículos.";
+          }
+          
+          $result->free_result();
+          $conn->close();
+          ?>
+        </div>
+        <button class="carousel-arrow next">→</button>
+      </div>
 
-        echo' <div class="titulo__galery"><h1>' .$titulo . '</h1>';
-        echo'</div>';
-        echo'<div class="galery">';
-        echo'<div class="parrafo__galery">';
-        echo '<p>'. $historia . '</p>';
-        echo '</div>';
-        echo '<div class="img__galery">';
-        echo '<img src="../assets/historia/' . $imagen . '" alt="" />';
-        echo '</div>';
-        echo '</div>';  
-    }      
-} else {
-    echo "No se encontraron artículos.";
-}
-$result->free_result();
-$conn->close();
-?>
 
-           
-        <a href="https://wa.me/573197531345" class="btn-whatsapp">
-            <img src="../assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
-        </a>
-    </main>
+                <a href="https://wa.me/573197531345" class="btn-whatsapp">
+                    <img src="../assets/icon-whatsapp.svg" alt="Contactar por WhatsApp">
+                </a>
+                <script src="../js/ordenar.js"></script> 
     <footer>
-
-        <?php include '../src/footer.php'; ?>
-
+        <?php //include '../src/footer.php'; ?>
     </footer>
+    
 </body>
+</html>

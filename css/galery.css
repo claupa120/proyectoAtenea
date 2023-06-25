@@ -5,89 +5,134 @@
   font-family: "Raleway", sans-serif;
 }
 
+header {
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+}
 
-.home {
+body {
+  position: absolute;
+}
+
+
+
+
+.carousel-container {
+  padding: 100px 15px;
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: auto;
 }
 
-
-.container__galery {
-
-  padding: 100px 15px;
-  background-image: url('../assets/pagina/fondo.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
+.carousel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  margin-top: 60px;
+  transition: transform 0.5s ease;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
-.titulo__galery {
-  margin: 100px auto;
+.carousel-item {
+  flex: 0 0 90%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(249, 249, 235);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 30px;
+}
+
+.card-title {
+  margin: 0px auto;
   position: relative;
-  width: 347px;
+  width: 100%;
   height: auto;
   font-family: 'ZCOOL XiaoWei';
   font-style: normal;
   font-weight: 400;
-  font-size: 96px;
-  line-height: 96px;
+  font-size: 60px;
+  line-height: 48px;
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   color: #0A9CFD;
 
-
 }
 
-.galery {
-  display: flex;
-  justify-content: center;
-
-}
-
-.parrafo__galery {
-
+.card-text {
   width: 40%;
   height: auto;
   font-family: 'Rhodium Libre';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 34px;
+  line-height: 28px;
   text-align: justify;
   color: #0F0E0E;
   padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-start;
+  margin-top: 100px;
+  margin-left: 50px;
 
 }
 
-.img__galery {
-
+.card-img-top {
   position: relative;
   width: 45%;
   height: auto;
-  left: 25px;
-  top: 30px;
+  left: 50%;
+  margin-top: -120px;
+  /* transform: translateX(-50%); */
   display: flex;
   justify-content: center;
   align-items: center;
 
-
 }
 
-.img__galery img {
-
+.card-img-top img {
   width: 500px;
   height: 500px;
   border: 5px solid #F56B1D;
   border-radius: 183.5px 183.5px 183.5px 0px;
-
 }
 
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
 
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-arrow.next {
+  right: 100px;
+}
+footer{
+  width: 150%;
+  height: auto;
+}
 .btn-whatsapp {
   position: fixed;
   z-index: 999;
@@ -135,69 +180,145 @@
     opacity: 0;
     transform: scale(2.5);
   }
+ 
 }
 
-@media screen and (max-width:1000px) {
-  .home {
-    width: 50%;
-    height: auto;
-  }
-  .titulo__galery {
-    margin: -60px auto;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    font-family: 'ZCOOL XiaoWei';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 70px;
-    line-height: 96px;
-  }
-  .titulo__galery h1{
-    margin: 0 auto;
-  }
-  .galery{
-    width: 200%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    margin-left: 25px;
-  }
-   
-  .parrafo__galery {
 
+/* Responsive Styles */
+
+@media screen and (max-width: 1300px) {
+  .carousel-item {
     width: 100%;
     height: auto;
-    
-    
+    display: grid;
+    grid-column: auto;
+
   }
-  
-  .img__galery {
-  
+
+  .card-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .card-text {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+
+  }
+
+  .card-img-top {
     position: relative;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-  
-  }
-  .img__galery img {
-  
-  width: 300px;
-  height: auto;
-  
-  
+    margin-top: 50px;
+    transform: translateX(-50%);
   }
 
-  
-  
+  .card-img-top img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #F56B1D;
+    border-radius: 183.5px 183.5px 183.5px 0px;
   }
+}
 
-
-@media screen and (max-width:320px) {
-  .home {
-    width: 15%;
+@media screen and (max-width: 1000px) {
+  .carousel {
+    width:100%;
     height: auto;
+    display: flex;
+   
+  }
+  .card-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .card-text {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin: 0 auto;
+    
+
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-container{
+    width: 70%;
+    height:auto;
+   
+  }
+.carousel{
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  
+
+}
+  .card-title {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .card-text {
+    width:90%;
+    height: auto;
+    font-size: 14px;
+    line-height: 24px;
+   
+  }
+  .card-img-top img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #F56B1D;
+    border-radius: 183.5px 183.5px 183.5px 0px;
+  }
+  .carousel-arrow {
+    top: 50%;
+    transform: translateY(-150%);
+    font-size: 24px;
+   
+  }
+  .carousel-arrow.prev {
+    left: 20px;
+  }
+  
+  .carousel-arrow.next {
+    right: 40px;
+  }
+}
+footer{
+  width: 70%;
+  height: auto;
+}
+
+@media (max-width: 320px) {
+  .carousel {
+    height: 50vh;
+  }
+
+  .card-title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .card-text {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
